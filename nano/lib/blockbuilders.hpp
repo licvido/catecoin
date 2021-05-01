@@ -93,13 +93,13 @@ public:
 	state_block_builder & account (nano::account const & account);
 	/** Set account from hex representation of public key */
 	state_block_builder & account_hex (std::string const & account_hex);
-	/** Set account from an xrb_ or nano_ address */
+	/** Set account from an cate_ address */
 	state_block_builder & account_address (std::string const & account_address);
 	/** Set representative */
 	state_block_builder & representative (nano::account const & account);
 	/** Set representative from hex representation of public key */
 	state_block_builder & representative_hex (std::string const & account_hex);
-	/** Set representative from an xrb_ or nano_ address */
+	/** Set representative from an cate_ address */
 	state_block_builder & representative_address (std::string const & account_address);
 	/** Set previous block hash */
 	state_block_builder & previous (nano::block_hash const & previous);
@@ -115,7 +115,7 @@ public:
 	state_block_builder & link (nano::link const & link);
 	/** Set link from hex representation */
 	state_block_builder & link_hex (std::string const & link_hex);
-	/** Set link from an xrb_ or nano_ address */
+	/** Set link from an cate_ address */
 	state_block_builder & link_address (std::string const & link_address);
 	/** Provides validation for build() */
 	void validate ();
@@ -138,13 +138,13 @@ public:
 	open_block_builder & account (nano::account account);
 	/** Set account from hex representation of public key */
 	open_block_builder & account_hex (std::string account_hex);
-	/** Set account from an xrb_ or nano_ address */
+	/** Set account from an cate_ address */
 	open_block_builder & account_address (std::string account_address);
 	/** Set representative */
 	open_block_builder & representative (nano::account account);
 	/** Set representative from hex representation of public key */
 	open_block_builder & representative_hex (std::string account_hex);
-	/** Set representative from an xrb_ or nano_ address */
+	/** Set representative from an cate_ address */
 	open_block_builder & representative_address (std::string account_address);
 	/** Set source block hash */
 	open_block_builder & source (nano::block_hash source);
@@ -171,7 +171,7 @@ public:
 	change_block_builder & representative (nano::account account);
 	/** Set representative from hex representation of public key */
 	change_block_builder & representative_hex (std::string account_hex);
-	/** Set representative from an xrb_ or nano_ address */
+	/** Set representative from an cate_ address */
 	change_block_builder & representative_address (std::string account_address);
 	/** Set previous block hash */
 	change_block_builder & previous (nano::block_hash previous);
@@ -198,7 +198,7 @@ public:
 	send_block_builder & destination (nano::account account);
 	/** Set destination from hex representation of public key */
 	send_block_builder & destination_hex (std::string account_hex);
-	/** Set destination from an xrb_ or nano_ address */
+	/** Set destination from an cate_ address */
 	send_block_builder & destination_address (std::string account_address);
 	/** Set previous block hash */
 	send_block_builder & previous (nano::block_hash previous);
