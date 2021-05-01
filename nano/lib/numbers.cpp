@@ -79,7 +79,7 @@ bool nano::public_key::decode_account (std::string const & source_a)
 		auto nano_prefix (source_a[0] == 'n' && source_a[1] == 'a' && source_a[2] == 'n' && source_a[3] == 'o' && (source_a[4] == '_' || source_a[4] == '-'));
 		auto cate_prefix (source_a[0] == 'c' && source_a[1] == 'a' && source_a[2] == 't' && source_a[3] == 'e' && (source_a[4] == '_' || source_a[4] == '-'));
 		auto node_id_prefix = (source_a[0] == 'n' && source_a[1] == 'o' && source_a[2] == 'd' && source_a[3] == 'e' && source_a[4] == '_');
-		error = (xrb_prefix && source_a.size () != 64) || (nano_prefix && source_a.size () != 65 || (cate_prefix && source_a.size () != 65);
+		error = (xrb_prefix && source_a.size () != 64) || (nano_prefix && source_a.size () != 65) || (cate_prefix && source_a.size () != 65);
 		if (!error)
 		{
 			if (xrb_prefix || nano_prefix || cate_prefix || node_id_prefix)
