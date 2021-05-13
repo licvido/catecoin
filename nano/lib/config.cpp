@@ -8,9 +8,9 @@
 namespace nano
 {
 work_thresholds const network_constants::publish_full (
-0xfffffe0000000000,
-0xfffffe0000000000,
-0xfffffe0000000000
+0xfffff00000000000,
+0xfffff00000000000,
+0xffffe00000000000
 );
 
 work_thresholds const network_constants::publish_beta (

@@ -109,7 +109,7 @@ nano_live_genesis (live_genesis_data),
 genesis_account (network_a == nano::nano_networks::nano_test_network ? nano_test_account : network_a == nano::nano_networks::nano_beta_network ? nano_beta_account : nano_live_account),
 genesis_block (network_a == nano::nano_networks::nano_test_network ? nano_test_genesis : network_a == nano::nano_networks::nano_beta_network ? nano_beta_genesis : nano_live_genesis),
 genesis_hash (parse_block_from_genesis_data (genesis_block)->hash ()),
-genesis_amount (nano::uint128_t ("333000000000000000000000000000000000000")),
+genesis_amount (std::numeric_limits<nano::uint128_t>::max ()),
 burn_account (0)
 {
 	nano::link epoch_link_v1;
